@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:orderapp/routes/app_pages.dart';
 import 'package:orderapp/utils/custom_toast.dart';
 
 class LoginController extends GetxController {
@@ -56,6 +57,7 @@ class LoginController extends GetxController {
       showToasterrorborder("Please Enter Mobile Number", context);
     } else {
       isLoading(true);
+      Get.offAllNamed(Routes.main);
       // login(context).then((_) => isLoading(false));
     }
   }

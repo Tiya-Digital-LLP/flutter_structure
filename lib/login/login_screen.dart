@@ -34,7 +34,6 @@ class _LoginScreenState extends State<LoginScreen> {
         appBar: CustomAppBar(
           size: MediaQuery.of(context).size,
           titleText: 'Track Your Order',
-          onTap: () {},
         ),
         body: SafeArea(
           child: Column(

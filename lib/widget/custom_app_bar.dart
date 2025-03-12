@@ -5,14 +5,8 @@ import 'package:orderapp/utils/text_style.dart';
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Size size;
   final String titleText;
-  final VoidCallback? onTap;
 
-  const CustomAppBar({
-    super.key,
-    required this.size,
-    required this.titleText,
-    this.onTap,
-  });
+  const CustomAppBar({super.key, required this.size, required this.titleText});
 
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
