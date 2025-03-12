@@ -9,7 +9,7 @@ class AppColors {
   static Color otpBorder = const Color(0xFFC4C4C4);
   static Color greenBorder = Colors.green;
   static Color redText = const Color(0xFFF04319);
-  static Color primaryColor = const Color(0xFF376299);
+  static Color primaryColor = const Color(0xFF33409E);
   static Color bottomIcon = const Color(0xFF292D32);
   static Color background = const Color(0xFFf5f6f6);
   static Color searchbar = const Color(0xFFF1F5F6);

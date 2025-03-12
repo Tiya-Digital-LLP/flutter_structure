@@ -57,6 +57,7 @@ class Assets {
   static const String svgImage = 'assets/svg/Image.svg';
   static const String svgInstagram = 'assets/svg/Instagram.svg';
   static const String svgLike = 'assets/svg/like.svg';
+  static const String svgLogin = 'assets/svg/login.svg';
   static const String svgLogosFacebook = 'assets/svg/logos_facebook.svg';
   static const String svgLogosLinkedinIcon = 'assets/svg/logos_linkedin-icon.svg';
   static const String svgLogosWhatsappIcon = 'assets/svg/logos_whatsapp-icon.svg';

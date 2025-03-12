@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:orderapp/generated/assets.dart';
 import 'package:orderapp/routes/app_pages.dart';
 import 'package:orderapp/utils/app_colors.dart';
+import 'package:orderapp/utils/text_style.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -20,28 +21,27 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Future<void> _navigateToNextScreen() async {
-    await Future.delayed(const Duration(milliseconds: 500));
+    await Future.delayed(const Duration(seconds: 3));
     Get.offAllNamed(Routes.login);
   }
 
   @override
   Widget build(BuildContext context) {
-    final Size size = MediaQuery.of(context).size;
+    final size = MediaQuery.of(context).size;
+
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Container(
         height: double.infinity,
         width: double.infinity,
         color: AppColors.white,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(
-              height: MediaQuery.of(context).padding.top + size.height * 0.25,
-            ),
-            Image.asset(Assets.imagesLogo),
-            Expanded(child: Container()),
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: Image.asset(Assets.imagesSplashImage),
+            SizedBox(width: 200, child: Image.asset(Assets.imagesLogo)),
+            Text(
+              'OrderApp',
+              style: textStyleW700(size.width * 0.042, AppColors.blackText),
             ),
           ],
         ),
